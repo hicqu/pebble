@@ -7,7 +7,7 @@ package objstorageprovider
 import (
 	"io"
 
-	"github.com/cockroachdb/pebble/objstorage"
+	"github.com/hicqu/pebble/objstorage"
 )
 
 // sharedWritable is a very simple implementation of Writable on top of the

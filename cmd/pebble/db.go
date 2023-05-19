@@ -7,9 +7,9 @@ package main
 import (
 	"log"
 
-	"github.com/cockroachdb/pebble"
-	"github.com/cockroachdb/pebble/bloom"
-	"github.com/cockroachdb/pebble/internal/bytealloc"
+	"github.com/hicqu/pebble"
+	"github.com/hicqu/pebble/bloom"
+	"github.com/hicqu/pebble/internal/bytealloc"
 )
 
 // DB specifies the minimal interfaces that need to be implemented to support

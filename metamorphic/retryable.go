@@ -8,9 +8,9 @@ import (
 	"bytes"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble"
-	"github.com/cockroachdb/pebble/internal/errorfs"
-	"github.com/cockroachdb/pebble/internal/testkeys"
+	"github.com/hicqu/pebble"
+	"github.com/hicqu/pebble/internal/errorfs"
+	"github.com/hicqu/pebble/internal/testkeys"
 )
 
 // withRetries executes fn, retrying it whenever an errorfs.ErrInjected error

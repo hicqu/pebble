@@ -8,8 +8,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/invariants"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/invariants"
 )
 
 // LevelMetadata contains metadata for all of the files within

@@ -25,7 +25,7 @@ import (
 	"time"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/base"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/exp/rand"
 )
@@ -217,7 +217,7 @@ func TestSkiplistAdd(t *testing.T) {
 }
 
 func TestSkiplistAdd_Overflow(t *testing.T) {
-	// Regression test for cockroachdb/pebble#1258. The length of the nodes buffer
+	// Regression test for hicqu/pebble#1258. The length of the nodes buffer
 	// cannot exceed the maximum allowable size.
 	d := &testStorage{}
 	l := newTestSkiplist(d)

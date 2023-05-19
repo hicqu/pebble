@@ -11,7 +11,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/cockroachdb/pebble/record"
+	"github.com/hicqu/pebble/record"
 )
 
 // commitQueue is a lock-free fixed-size single-producer, multi-consumer

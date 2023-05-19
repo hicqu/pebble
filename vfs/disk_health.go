@@ -13,7 +13,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/cockroachdb/pebble/internal/invariants"
+	"github.com/hicqu/pebble/internal/invariants"
 	"github.com/cockroachdb/redact"
 )
 

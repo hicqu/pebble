@@ -10,8 +10,8 @@ import (
 	"testing"
 
 	"github.com/cockroachdb/datadriven"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/manifest"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/manifest"
 	"github.com/stretchr/testify/require"
 )
 

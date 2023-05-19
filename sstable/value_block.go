@@ -12,10 +12,10 @@ import (
 	"unsafe"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/cache"
-	"github.com/cockroachdb/pebble/internal/invariants"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider/objiotracing"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/cache"
+	"github.com/hicqu/pebble/internal/invariants"
+	"github.com/hicqu/pebble/objstorage/objstorageprovider/objiotracing"
 	"golang.org/x/exp/rand"
 )
 
@@ -50,7 +50,7 @@ import (
 // which makes stepping from one key prefix to the next prefix (i.e., skipping
 // over older versions of a MVCC key) more efficient by avoiding key
 // comparisons and key decoding. See the results in
-// https://github.com/cockroachdb/pebble/pull/2149 and more details in the
+// https://github.com/hicqu/pebble/pull/2149 and more details in the
 // comment inside BenchmarkIteratorScanNextPrefix. These improvements are also
 // visible in end-to-end CockroachDB tests, as outlined in
 // https://github.com/cockroachdb/cockroach/pull/96652.
@@ -84,8 +84,8 @@ import (
 // including the memory lifetime management.
 //
 // For historical discussions about this feature, see the issue
-// https://github.com/cockroachdb/pebble/issues/1170 and the prototype in
-// https://github.com/cockroachdb/pebble/pull/1443.
+// https://github.com/hicqu/pebble/issues/1170 and the prototype in
+// https://github.com/hicqu/pebble/pull/1443.
 //
 // The code in this file mainly covers value block and related encodings. We
 // discuss these in the next section.
@@ -130,7 +130,7 @@ import (
 // there are multiple use cases in CockroachDB that need the value length but
 // not the value, for which we can avoid reading the value in the value block
 // (see
-// https://github.com/cockroachdb/pebble/issues/1170#issuecomment-958203245).
+// https://github.com/hicqu/pebble/issues/1170#issuecomment-958203245).
 //
 // A value block has a checksum like other blocks, and is optionally
 // compressed. An uncompressed value block is a sequence of values with no
@@ -217,7 +217,7 @@ const (
 // valueHandle fields are varint encoded, so maximum 5 bytes each, plus 1 byte
 // for the valuePrefix. This could alternatively be group varint encoded, but
 // experiments were inconclusive
-// (https://github.com/cockroachdb/pebble/pull/1443#issuecomment-1270298802).
+// (https://github.com/hicqu/pebble/pull/1443#issuecomment-1270298802).
 const valueHandleMaxLen = 5*3 + 1
 
 // Assert blockHandleLikelyMaxLen >= valueHandleMaxLen.

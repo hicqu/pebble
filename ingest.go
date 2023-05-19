@@ -10,12 +10,12 @@ import (
 	"time"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/keyspan"
-	"github.com/cockroachdb/pebble/internal/manifest"
-	"github.com/cockroachdb/pebble/internal/private"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/sstable"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/keyspan"
+	"github.com/hicqu/pebble/internal/manifest"
+	"github.com/hicqu/pebble/internal/private"
+	"github.com/hicqu/pebble/objstorage"
+	"github.com/hicqu/pebble/sstable"
 )
 
 func sstableKeyCompare(userCmp Compare, a, b InternalKey) int {
@@ -618,7 +618,7 @@ func ingestTargetLevel(
 // platform-and-FS-agnostic way, ensure that all sstables in the input are
 // properly synced to disk. Opening new file handles and Sync()-ing them
 // does not always guarantee durability; see the discussion here on that:
-// https://github.com/cockroachdb/pebble/pull/835#issuecomment-663075379
+// https://github.com/hicqu/pebble/pull/835#issuecomment-663075379
 //
 // Ingestion loads each sstable into the lowest level of the LSM which it
 // doesn't overlap (see ingestTargetLevel). If an sstable overlaps a memtable,
@@ -645,7 +645,7 @@ func ingestTargetLevel(
 // mutations that get sequence numbers larger than the ingestion sequence
 // number get queued up behind the ingestion waiting for it to complete. This
 // can produce a noticeable hiccup in performance. See
-// https://github.com/cockroachdb/pebble/issues/25 for an idea for how to fix
+// https://github.com/hicqu/pebble/issues/25 for an idea for how to fix
 // this hiccup.
 func (d *DB) Ingest(paths []string) error {
 	if err := d.closed.Load(); err != nil {

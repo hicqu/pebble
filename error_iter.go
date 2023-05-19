@@ -5,8 +5,8 @@
 package pebble
 
 import (
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/keyspan"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/keyspan"
 )
 
 type errorIter struct {

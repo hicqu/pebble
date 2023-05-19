@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble/vfs"
 	"github.com/spf13/cobra"
 )
 

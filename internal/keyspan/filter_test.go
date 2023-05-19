@@ -10,8 +10,8 @@ import (
 	"testing"
 
 	"github.com/cockroachdb/datadriven"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/testkeys"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/testkeys"
 )
 
 func TestFilteringIter(t *testing.T) {

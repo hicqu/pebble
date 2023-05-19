@@ -5,8 +5,8 @@
 package sstable
 
 import (
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/cache"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/cache"
 )
 
 // Compression is the per-block compression algorithm to use.

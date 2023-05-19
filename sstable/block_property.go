@@ -10,8 +10,8 @@ import (
 	"math"
 	"sync"
 
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/rangekey"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/rangekey"
 )
 
 // Block properties are an optional user-facing feature that can be used to

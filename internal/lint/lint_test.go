@@ -49,7 +49,7 @@ func TestLint(t *testing.T) {
 		t.Skip("lint checks skipped on Windows")
 	}
 
-	const root = "github.com/cockroachdb/pebble"
+	const root = "github.com/hicqu/pebble"
 
 	pkg, err := build.Import(root, "../..", 0)
 	require.NoError(t, err)

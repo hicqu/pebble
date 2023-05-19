@@ -8,10 +8,10 @@ import (
 	"encoding/binary"
 	"testing"
 
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/objstorage/shared"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/objstorage"
+	"github.com/hicqu/pebble/objstorage/shared"
+	"github.com/hicqu/pebble/vfs"
 	"github.com/stretchr/testify/require"
 )
 

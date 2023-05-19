@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cockroachdb/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/base"
 	"golang.org/x/exp/rand"
 )
 

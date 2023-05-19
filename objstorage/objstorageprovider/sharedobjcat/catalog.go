@@ -11,11 +11,11 @@ import (
 	"sync"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/record"
-	"github.com/cockroachdb/pebble/vfs"
-	"github.com/cockroachdb/pebble/vfs/atomicfs"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/objstorage"
+	"github.com/hicqu/pebble/record"
+	"github.com/hicqu/pebble/vfs"
+	"github.com/hicqu/pebble/vfs/atomicfs"
 )
 
 // Catalog is used to manage the on-disk shared object catalog.

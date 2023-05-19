@@ -12,7 +12,7 @@ import (
 	"testing"
 
 	"github.com/cockroachdb/datadriven"
-	"github.com/cockroachdb/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/base"
 )
 
 func TestSeek(t *testing.T) {

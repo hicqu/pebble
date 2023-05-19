@@ -18,17 +18,17 @@ import (
 
 	"github.com/cespare/xxhash/v2"
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/bytealloc"
-	"github.com/cockroachdb/pebble/internal/cache"
-	"github.com/cockroachdb/pebble/internal/crc"
-	"github.com/cockroachdb/pebble/internal/invariants"
-	"github.com/cockroachdb/pebble/internal/keyspan"
-	"github.com/cockroachdb/pebble/internal/manifest"
-	"github.com/cockroachdb/pebble/internal/private"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider/objiotracing"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/bytealloc"
+	"github.com/hicqu/pebble/internal/cache"
+	"github.com/hicqu/pebble/internal/crc"
+	"github.com/hicqu/pebble/internal/invariants"
+	"github.com/hicqu/pebble/internal/keyspan"
+	"github.com/hicqu/pebble/internal/manifest"
+	"github.com/hicqu/pebble/internal/private"
+	"github.com/hicqu/pebble/objstorage"
+	"github.com/hicqu/pebble/objstorage/objstorageprovider"
+	"github.com/hicqu/pebble/objstorage/objstorageprovider/objiotracing"
 )
 
 var errCorruptIndexEntry = base.CorruptionErrorf("pebble/table: corrupt index entry")
@@ -2052,7 +2052,7 @@ func (i *twoLevelIterator) SeekGE(
 		}
 		// Else flags.TrySeekUsingNext(). The i.exhaustedBounds is important to
 		// preserve for singleLevelIterator, and twoLevelIterator.skipForward. See
-		// bug https://github.com/cockroachdb/pebble/issues/2036.
+		// bug https://github.com/hicqu/pebble/issues/2036.
 	}
 
 	if !dontSeekWithinSingleLevelIter {
@@ -2231,7 +2231,7 @@ func (i *twoLevelIterator) SeekPrefixGE(
 		}
 		// Else flags.TrySeekUsingNext(). The i.exhaustedBounds is important to
 		// preserve for singleLevelIterator, and twoLevelIterator.skipForward. See
-		// bug https://github.com/cockroachdb/pebble/issues/2036.
+		// bug https://github.com/hicqu/pebble/issues/2036.
 	}
 
 	if !dontSeekWithinSingleLevelIter {

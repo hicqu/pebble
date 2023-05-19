@@ -10,9 +10,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/cockroachdb/pebble"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/vfs"
 )
 
 type workloadCaptureState uint8

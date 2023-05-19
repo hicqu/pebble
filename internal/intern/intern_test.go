@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/cockroachdb/pebble/internal/invariants"
+	"github.com/hicqu/pebble/internal/invariants"
 )
 
 func TestBytes(t *testing.T) {

@@ -17,8 +17,8 @@ import (
 
 	"github.com/cockroachdb/datadriven"
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/record"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/record"
 	"github.com/kr/pretty"
 	"github.com/stretchr/testify/require"
 )

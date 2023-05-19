@@ -21,7 +21,7 @@ import (
 	"encoding/binary"
 	"sync"
 
-	"github.com/cockroachdb/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/base"
 )
 
 type splice struct {

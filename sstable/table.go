@@ -65,15 +65,15 @@
 //		return err
 //	}
 //	return w.Close()
-package sstable // import "github.com/cockroachdb/pebble/sstable"
+package sstable // import "github.com/hicqu/pebble/sstable"
 
 import (
 	"context"
 	"encoding/binary"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/objstorage"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/objstorage"
 )
 
 /*

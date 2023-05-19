@@ -12,8 +12,8 @@ import (
 	"strings"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/invariants"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/invariants"
 )
 
 // errInvalidL0SublevelsOpt is for use in AddL0Files when the incremental

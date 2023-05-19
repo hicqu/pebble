@@ -6,9 +6,9 @@
 package rangekey
 
 import (
-	"github.com/cockroachdb/pebble/internal/keyspan"
-	"github.com/cockroachdb/pebble/internal/rangekey"
-	"github.com/cockroachdb/pebble/sstable"
+	"github.com/hicqu/pebble/internal/keyspan"
+	"github.com/hicqu/pebble/internal/rangekey"
+	"github.com/hicqu/pebble/sstable"
 )
 
 // Key exports the keyspan.Key type.

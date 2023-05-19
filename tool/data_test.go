@@ -14,9 +14,9 @@ import (
 	"time"
 
 	"github.com/cockroachdb/datadriven"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/testkeys"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/testkeys"
+	"github.com/hicqu/pebble/vfs"
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/require"
 )

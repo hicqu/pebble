@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/cockroachdb/datadriven"
-	"github.com/cockroachdb/pebble/internal/randvar"
+	"github.com/hicqu/pebble/internal/randvar"
 	"github.com/kr/pretty"
 	"github.com/stretchr/testify/require"
 )

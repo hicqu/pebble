@@ -19,7 +19,7 @@ import (
 	"unicode"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/humanize"
+	"github.com/hicqu/pebble/internal/humanize"
 	"github.com/spf13/cobra"
 )
 
@@ -27,7 +27,7 @@ var (
 	// Captures a common logging prefix that can be used as the context for the
 	// surrounding information captured by other expressions. Example:
 	//
-	//   I211215 14:26:56.012382 51831533 3@vendor/github.com/cockroachdb/pebble/compaction.go:1845 ⋮ [n5,pebble,s5] ...
+	//   I211215 14:26:56.012382 51831533 3@vendor/github.com/hicqu/pebble/compaction.go:1845 ⋮ [n5,pebble,s5] ...
 	//
 	logContextPattern = regexp.MustCompile(
 		`^.*` +
@@ -51,8 +51,8 @@ var (
 
 	// Example compaction start and end log lines:
 	//
-	//   I211215 14:26:56.012382 51831533 3@vendor/github.com/cockroachdb/pebble/compaction.go:1845 ⋮ [n5,pebble,s5] 1216510  [JOB 284925] compacting(default) L2 [442555] (4.2 M) + L3 [445853] (8.4 M)
-	//   I211215 14:26:56.318543 51831533 3@vendor/github.com/cockroachdb/pebble/compaction.go:1886 ⋮ [n5,pebble,s5] 1216554  [JOB 284925] compacted(default) L2 [442555] (4.2 M) + L3 [445853] (8.4 M) -> L3 [445883 445887] (13 M), in 0.3s, output rate 42 M/s
+	//   I211215 14:26:56.012382 51831533 3@vendor/github.com/hicqu/pebble/compaction.go:1845 ⋮ [n5,pebble,s5] 1216510  [JOB 284925] compacting(default) L2 [442555] (4.2 M) + L3 [445853] (8.4 M)
+	//   I211215 14:26:56.318543 51831533 3@vendor/github.com/hicqu/pebble/compaction.go:1886 ⋮ [n5,pebble,s5] 1216554  [JOB 284925] compacted(default) L2 [442555] (4.2 M) + L3 [445853] (8.4 M) -> L3 [445883 445887] (13 M), in 0.3s, output rate 42 M/s
 	//
 	// NOTE: we use the log timestamp to compute the compaction duration rather
 	// than the Pebble log output.
@@ -75,8 +75,8 @@ var (
 
 	// Example memtable flush log lines:
 	//
-	//   I211213 16:23:48.903751 21136 3@vendor/github.com/cockroachdb/pebble/event.go:599 ⋮ [n9,pebble,s9] 24 [JOB 10] flushing 2 memtables to L0
-	//   I211213 16:23:49.134464 21136 3@vendor/github.com/cockroachdb/pebble/event.go:603 ⋮ [n9,pebble,s9] 26 [JOB 10] flushed 2 memtables to L0 [1535806] (1.3 M), in 0.2s, output rate 5.8 M/s
+	//   I211213 16:23:48.903751 21136 3@vendor/github.com/hicqu/pebble/event.go:599 ⋮ [n9,pebble,s9] 24 [JOB 10] flushing 2 memtables to L0
+	//   I211213 16:23:49.134464 21136 3@vendor/github.com/hicqu/pebble/event.go:603 ⋮ [n9,pebble,s9] 26 [JOB 10] flushed 2 memtables to L0 [1535806] (1.3 M), in 0.2s, output rate 5.8 M/s
 	//
 	// NOTE: we use the log timestamp to compute the flush duration rather than
 	// the Pebble log output.
@@ -93,7 +93,7 @@ var (
 
 	// Example ingested log lines:
 	//
-	//   I220228 16:01:22.487906 18476248525 3@vendor/github.com/cockroachdb/pebble/ingest.go:637 ⋮ [n24,pebble,s24] 33430782  [JOB 10211226] ingested L0:21818678 (1.8 K), L0:21818683 (1.2 K), L0:21818679 (1.6 K), L0:21818680 (1.1 K), L0:21818681 (1.1 K), L0:21818682 (160 M)
+	//   I220228 16:01:22.487906 18476248525 3@vendor/github.com/hicqu/pebble/ingest.go:637 ⋮ [n24,pebble,s24] 33430782  [JOB 10211226] ingested L0:21818678 (1.8 K), L0:21818683 (1.2 K), L0:21818679 (1.6 K), L0:21818680 (1.1 K), L0:21818681 (1.1 K), L0:21818682 (160 M)
 	//
 	ingestedPattern = regexp.MustCompile(
 		`^.*` +

@@ -9,9 +9,9 @@ import (
 
 	"github.com/cockroachdb/datadriven"
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/testkeys"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble/internal/testkeys"
+	"github.com/hicqu/pebble/objstorage/objstorageprovider"
+	"github.com/hicqu/pebble/vfs"
 	"github.com/stretchr/testify/require"
 )
 

@@ -9,8 +9,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/cockroachdb/pebble/internal/testkeys"
-	"github.com/cockroachdb/pebble/tool"
+	"github.com/hicqu/pebble/internal/testkeys"
+	"github.com/hicqu/pebble/tool"
 	"github.com/spf13/cobra"
 )
 

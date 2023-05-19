@@ -370,7 +370,7 @@ type InternalIteratorStats struct {
 	PointCount uint64
 	// Points that were iterated over that were covered by range tombstones. It
 	// can be useful for discovering instances of
-	// https://github.com/cockroachdb/pebble/issues/1070.
+	// https://github.com/hicqu/pebble/issues/1070.
 	PointsCoveredByRangeTombstones uint64
 
 	// Stats related to points in value blocks encountered during iteration.

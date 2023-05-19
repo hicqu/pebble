@@ -7,8 +7,8 @@ package objstorageprovider
 import (
 	"context"
 
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/objstorage/shared"
+	"github.com/hicqu/pebble/objstorage"
+	"github.com/hicqu/pebble/objstorage/shared"
 )
 
 // sharedReadable is a very simple implementation of Readable on top of the

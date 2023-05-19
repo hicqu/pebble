@@ -7,7 +7,7 @@ package main
 import (
 	"testing"
 
-	"github.com/cockroachdb/pebble"
+	"github.com/hicqu/pebble"
 	"github.com/stretchr/testify/require"
 )
 

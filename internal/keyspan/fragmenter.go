@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/invariants"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/invariants"
 )
 
 type spansByStartKey struct {

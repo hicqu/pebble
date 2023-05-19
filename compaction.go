@@ -17,16 +17,16 @@ import (
 
 	"github.com/cockroachdb/errors"
 	"github.com/cockroachdb/errors/oserror"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/keyspan"
-	"github.com/cockroachdb/pebble/internal/manifest"
-	"github.com/cockroachdb/pebble/internal/private"
-	"github.com/cockroachdb/pebble/internal/rangedel"
-	"github.com/cockroachdb/pebble/internal/rangekey"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider/objiotracing"
-	"github.com/cockroachdb/pebble/sstable"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/keyspan"
+	"github.com/hicqu/pebble/internal/manifest"
+	"github.com/hicqu/pebble/internal/private"
+	"github.com/hicqu/pebble/internal/rangedel"
+	"github.com/hicqu/pebble/internal/rangekey"
+	"github.com/hicqu/pebble/objstorage"
+	"github.com/hicqu/pebble/objstorage/objstorageprovider/objiotracing"
+	"github.com/hicqu/pebble/sstable"
+	"github.com/hicqu/pebble/vfs"
 )
 
 var errEmptyTable = errors.New("pebble: empty table")
@@ -2048,7 +2048,7 @@ func (d *DB) flush1() (bytesFlushed uint64, err error) {
 				// been set yet. So, we directly use the FileNum. Since these
 				// files were generated as compaction outputs, these must be
 				// physical files on disk. This property might not hold once
-				// https://github.com/cockroachdb/pebble/issues/389 is
+				// https://github.com/hicqu/pebble/issues/389 is
 				// implemented if #389 creates virtual sstables as output files.
 				d.mu.versions.obsoleteTables = append(
 					d.mu.versions.obsoleteTables,
@@ -2569,7 +2569,7 @@ func (d *DB) compact1(c *compaction, errChannel chan error) (err error) {
 				// been set yet. So, we directly use the FileNum. Since these
 				// files were generated as compaction outputs, these must be
 				// physical files on disk. This property might not hold once
-				// https://github.com/cockroachdb/pebble/issues/389 is
+				// https://github.com/hicqu/pebble/issues/389 is
 				// implemented if #389 creates virtual sstables as output files.
 				d.mu.versions.obsoleteTables = append(
 					d.mu.versions.obsoleteTables,

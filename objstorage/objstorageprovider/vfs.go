@@ -8,9 +8,9 @@ import (
 	"context"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/objstorage"
+	"github.com/hicqu/pebble/vfs"
 )
 
 func (p *provider) vfsPath(fileType base.FileType, fileNum base.DiskFileNum) string {

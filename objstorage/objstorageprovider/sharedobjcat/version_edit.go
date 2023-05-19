@@ -10,8 +10,8 @@ import (
 	"io"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/objstorage"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/objstorage"
 )
 
 // versionEdit is a modification to the shared object state which can be encoded

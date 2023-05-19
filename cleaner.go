@@ -4,7 +4,7 @@
 
 package pebble
 
-import "github.com/cockroachdb/pebble/internal/base"
+import "github.com/hicqu/pebble/internal/base"
 
 // Cleaner exports the base.Cleaner type.
 type Cleaner = base.Cleaner

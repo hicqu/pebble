@@ -8,9 +8,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/cockroachdb/pebble"
-	"github.com/cockroachdb/pebble/internal/randvar"
-	"github.com/cockroachdb/pebble/internal/testkeys"
+	"github.com/hicqu/pebble"
+	"github.com/hicqu/pebble/internal/randvar"
+	"github.com/hicqu/pebble/internal/testkeys"
 	"golang.org/x/exp/rand"
 )
 

@@ -1,4 +1,4 @@
-module github.com/cockroachdb/pebble
+module github.com/hicqu/pebble
 
 require (
 	github.com/DataDog/zstd v1.4.5
@@ -6,6 +6,7 @@ require (
 	github.com/cespare/xxhash/v2 v2.2.0
 	github.com/cockroachdb/datadriven v1.0.3-0.20230413201302-be42291fc80f
 	github.com/cockroachdb/errors v1.8.1
+	github.com/cockroachdb/pebble v0.0.0-20230517202617-f6eaf9a696e6
 	github.com/cockroachdb/redact v1.0.8
 	github.com/ghemawat/stream v0.0.0-20171120220530-696b145b53b9
 	github.com/golang/snappy v0.0.4
@@ -31,7 +32,6 @@ require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/google/go-cmp v0.5.6 // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369 // indirect

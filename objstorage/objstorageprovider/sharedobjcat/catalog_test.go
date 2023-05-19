@@ -13,10 +13,10 @@ import (
 	"testing"
 
 	"github.com/cockroachdb/datadriven"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider/sharedobjcat"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/objstorage"
+	"github.com/hicqu/pebble/objstorage/objstorageprovider/sharedobjcat"
+	"github.com/hicqu/pebble/vfs"
 )
 
 func TestCatalog(t *testing.T) {

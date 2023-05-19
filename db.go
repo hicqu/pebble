@@ -3,7 +3,7 @@
 // the LICENSE file.
 
 // Package pebble provides an ordered key/value store.
-package pebble // import "github.com/cockroachdb/pebble"
+package pebble // import "github.com/hicqu/pebble"
 
 import (
 	"context"
@@ -15,17 +15,17 @@ import (
 	"time"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/arenaskl"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/invariants"
-	"github.com/cockroachdb/pebble/internal/keyspan"
-	"github.com/cockroachdb/pebble/internal/manifest"
-	"github.com/cockroachdb/pebble/internal/manual"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/record"
-	"github.com/cockroachdb/pebble/sstable"
-	"github.com/cockroachdb/pebble/vfs"
-	"github.com/cockroachdb/pebble/vfs/atomicfs"
+	"github.com/hicqu/pebble/internal/arenaskl"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/invariants"
+	"github.com/hicqu/pebble/internal/keyspan"
+	"github.com/hicqu/pebble/internal/manifest"
+	"github.com/hicqu/pebble/internal/manual"
+	"github.com/hicqu/pebble/objstorage"
+	"github.com/hicqu/pebble/record"
+	"github.com/hicqu/pebble/sstable"
+	"github.com/hicqu/pebble/vfs"
+	"github.com/hicqu/pebble/vfs/atomicfs"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

@@ -18,10 +18,10 @@ import (
 	"unicode"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/replay"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/replay"
+	"github.com/hicqu/pebble/vfs"
 	"github.com/spf13/cobra"
 )
 

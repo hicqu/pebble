@@ -12,8 +12,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cockroachdb/pebble/internal/randvar"
-	"github.com/cockroachdb/pebble/metamorphic"
+	"github.com/hicqu/pebble/internal/randvar"
+	"github.com/hicqu/pebble/metamorphic"
 )
 
 // TODO(peter):

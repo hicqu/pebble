@@ -12,8 +12,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/cockroachdb/pebble"
-	"github.com/cockroachdb/pebble/internal/randvar"
+	"github.com/hicqu/pebble"
+	"github.com/hicqu/pebble/internal/randvar"
 	"github.com/spf13/cobra"
 	"golang.org/x/exp/rand"
 )

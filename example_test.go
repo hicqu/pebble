@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/cockroachdb/pebble"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble"
+	"github.com/hicqu/pebble/vfs"
 )
 
 func Example() {

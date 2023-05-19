@@ -7,8 +7,8 @@ package objstorageprovider
 import (
 	"bufio"
 
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble/objstorage"
+	"github.com/hicqu/pebble/vfs"
 )
 
 // NewFileWritable returns a Writable that uses a file as underlying storage.

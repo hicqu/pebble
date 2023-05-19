@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/rate"
+	"github.com/hicqu/pebble/internal/rate"
 )
 
 var nilPacer = &noopPacer{}

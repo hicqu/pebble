@@ -11,9 +11,9 @@ import (
 	"sort"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/keyspan"
-	"github.com/cockroachdb/pebble/internal/manifest"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/keyspan"
+	"github.com/hicqu/pebble/internal/manifest"
 )
 
 // This file implements DB.CheckLevels() which checks that every entry in the

@@ -23,8 +23,8 @@ import (
 	"testing"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/bloom"
-	"github.com/cockroachdb/pebble/internal/base"
+	"github.com/hicqu/pebble/bloom"
+	"github.com/hicqu/pebble/internal/base"
 	"github.com/stretchr/testify/require"
 )
 

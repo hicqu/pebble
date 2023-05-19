@@ -21,13 +21,13 @@ import (
 
 	"github.com/cockroachdb/datadriven"
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/cache"
-	"github.com/cockroachdb/pebble/internal/errorfs"
-	"github.com/cockroachdb/pebble/internal/manifest"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider"
-	"github.com/cockroachdb/pebble/vfs"
-	"github.com/cockroachdb/pebble/vfs/atomicfs"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/cache"
+	"github.com/hicqu/pebble/internal/errorfs"
+	"github.com/hicqu/pebble/internal/manifest"
+	"github.com/hicqu/pebble/objstorage/objstorageprovider"
+	"github.com/hicqu/pebble/vfs"
+	"github.com/hicqu/pebble/vfs/atomicfs"
 	"github.com/cockroachdb/redact"
 	"github.com/kr/pretty"
 	"github.com/stretchr/testify/require"
@@ -610,7 +610,7 @@ func TestOpenWALReplay(t *testing.T) {
 	}
 }
 
-// Reproduction for https://github.com/cockroachdb/pebble/issues/2234.
+// Reproduction for https://github.com/hicqu/pebble/issues/2234.
 func TestWALReplaySequenceNumBug(t *testing.T) {
 	mem := vfs.NewMem()
 	d, err := Open("", testingRandomized(&Options{

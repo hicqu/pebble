@@ -9,7 +9,7 @@ import (
 	"io"
 	"math"
 
-	"github.com/cockroachdb/pebble/internal/keyspan"
+	"github.com/hicqu/pebble/internal/keyspan"
 )
 
 // Snapshot provides a read-only point-in-time view of the DB state.

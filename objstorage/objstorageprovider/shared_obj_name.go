@@ -7,8 +7,8 @@ package objstorageprovider
 import (
 	"fmt"
 
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/objstorage"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/objstorage"
 )
 
 // sharedObjectName returns the name of an object on shared storage.

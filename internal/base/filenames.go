@@ -10,7 +10,7 @@ import (
 	"strings"
 
 	"github.com/cockroachdb/errors/oserror"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble/vfs"
 	"github.com/cockroachdb/redact"
 )
 

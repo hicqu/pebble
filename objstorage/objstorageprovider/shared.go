@@ -10,11 +10,11 @@ import (
 	"sync/atomic"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/invariants"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider/sharedobjcat"
-	"github.com/cockroachdb/pebble/objstorage/shared"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/invariants"
+	"github.com/hicqu/pebble/objstorage"
+	"github.com/hicqu/pebble/objstorage/objstorageprovider/sharedobjcat"
+	"github.com/hicqu/pebble/objstorage/shared"
 )
 
 // sharedSubsystem contains the provider fields related to shared storage.

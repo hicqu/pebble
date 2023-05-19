@@ -9,11 +9,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/cache"
-	"github.com/cockroachdb/pebble/internal/humanize"
-	"github.com/cockroachdb/pebble/record"
-	"github.com/cockroachdb/pebble/sstable"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/cache"
+	"github.com/hicqu/pebble/internal/humanize"
+	"github.com/hicqu/pebble/record"
+	"github.com/hicqu/pebble/sstable"
 	"github.com/cockroachdb/redact"
 	"github.com/prometheus/client_golang/prometheus"
 )

@@ -13,7 +13,7 @@ import (
 	"sort"
 	"unsafe"
 
-	"github.com/cockroachdb/pebble/internal/intern"
+	"github.com/hicqu/pebble/internal/intern"
 )
 
 const propertiesBlockRestartInterval = math.MaxInt32

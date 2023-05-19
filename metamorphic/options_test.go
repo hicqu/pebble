@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cockroachdb/pebble"
-	"github.com/cockroachdb/pebble/internal/testkeys"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble"
+	"github.com/hicqu/pebble/internal/testkeys"
+	"github.com/hicqu/pebble/vfs"
 	"github.com/kr/pretty"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/exp/rand"

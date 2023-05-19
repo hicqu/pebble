@@ -14,11 +14,11 @@ import (
 	"time"
 
 	"github.com/cockroachdb/datadriven"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/testkeys"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider"
-	"github.com/cockroachdb/pebble/sstable"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble/internal/base"
+	"github.com/hicqu/pebble/internal/testkeys"
+	"github.com/hicqu/pebble/objstorage/objstorageprovider"
+	"github.com/hicqu/pebble/sstable"
+	"github.com/hicqu/pebble/vfs"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/exp/rand"
 )
@@ -618,7 +618,7 @@ func benchmarkRangeDelIterate(b *testing.B, entries, deleted int, snapshotCompac
 
 	// Some benchmarks test snapshots that force the range tombstone into the
 	// same level as the covered data.
-	// See https://github.com/cockroachdb/pebble/issues/1070.
+	// See https://github.com/hicqu/pebble/issues/1070.
 	if snapshotCompact {
 		s := d.NewSnapshot()
 		defer func() { require.NoError(b, s.Close()) }()

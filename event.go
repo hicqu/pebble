@@ -10,10 +10,10 @@ import (
 	"time"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/humanize"
-	"github.com/cockroachdb/pebble/internal/invariants"
-	"github.com/cockroachdb/pebble/internal/manifest"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble/internal/humanize"
+	"github.com/hicqu/pebble/internal/invariants"
+	"github.com/hicqu/pebble/internal/manifest"
+	"github.com/hicqu/pebble/vfs"
 	"github.com/cockroachdb/redact"
 )
 

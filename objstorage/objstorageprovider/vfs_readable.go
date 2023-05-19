@@ -10,9 +10,9 @@ import (
 	"os"
 	"sync"
 
-	"github.com/cockroachdb/pebble/internal/invariants"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/hicqu/pebble/internal/invariants"
+	"github.com/hicqu/pebble/objstorage"
+	"github.com/hicqu/pebble/vfs"
 )
 
 // fileReadable implements objstorage.Readable on top of a vfs.File.
